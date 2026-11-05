@@ -5,3 +5,42 @@
         border-radius: 4px;
     }
 }
+
+
+.card{
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: linear-gradient(
+            180deg,
+            transparent 0%,
+            #020617 100%
+        );
+    }
+    
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        padding: 24px;
+        text-align:left;
+
+        h2{
+            margin-top: 8px;
+        }
+
+        &:has(.text-lg){
+            padding: 12px;
+        }
+    }
+
+}

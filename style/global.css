@@ -13,12 +13,12 @@
     --text-color-secondary:#cbd5e1;
 
     --font-family: "Archivo", sans-serif;
-    --h1: 800 24px/135% extra-bold var(--font-family);
-    --h2: 800 16px/140% extra-bold var(--font-family);
-    --h3: 800 14px/140% extra-bold var(--font-family);
-    --text-span: 600 14px/145% semi-bold var(--font-family);
-    --text: 400 16px/140% regular var(--font-family);
-    --text-small: 400 14px/140% regular var(--font-family);
+    --h1: 800 24px/135% var(--font-family);
+    --h2: 800 16px/140% var(--font-family);
+    --h3: 800 14px/140% var(--font-family);
+    --text-span: 600 14px/145% var(--font-family);
+    --text: 400 16px/140% var(--font-family);
+    --text-small: 400 14px/140% var(--font-family);
 }
 
 body{
@@ -53,4 +53,20 @@ img{
 
 main{
     margin-top: 40px;
+}
+
+.content-tag{
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: var(--brand-color-dark);
+    color: var(--text-color-primary);
+    border-radius: 4px;
+    font: var(--text-span);
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &:hover{
+        background-color: var(--brand-color-light);
+        cursor: pointer;
+    }
 }
