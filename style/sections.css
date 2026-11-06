@@ -5,6 +5,8 @@ section header{
 }
 
 #featured{
+
+    grid-area: fetured;
     img{
         height: 100%;
         object-fit: cover;
@@ -51,6 +53,8 @@ section header{
 
 #weekly{
 
+    grid-area: weekly;
+
     header a {
         justify-self: end;
         align-items: center;
@@ -85,4 +89,70 @@ section header{
             font-weight: 600;
         }
     }
+}
+
+#ai{
+
+    grid-area: ai;
+
+    article{
+        align-items: center;
+    }
+
+    img{
+        border-radius: 4px;
+        width: 176px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    h3{
+        margin-block: 8px 4px;
+    }
+
+    header a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span{
+            background-image: url("../assets/icons/ArrowRight.svg");
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+
+}
+
+aside{
+    grid-area: aside;
+
+    header a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span{
+            background-image: url("../assets/icons/ArrowRight.svg");
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+}
+
+#more{
+
+    margin-top: 32px;
+    h3{
+        margin-top: 8px;
+    }
+        img{
+        border-radius: 4px;
+        width: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
 }
